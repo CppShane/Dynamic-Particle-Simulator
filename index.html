@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Particle Simulation Example</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="https://kit.fontawesome.com/95445fc841.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+
+    <body style="margin: 0; padding: 0;">
+        <div class="overlay-header">
+            <div class="menu-button">
+                <i id="menu-button-img" class="fas fa-bars fa-lg" style="color: white;"></i>
+            </div>
+            <h1 id="title-header">DPS</h1>
+        </div>
+
+        <div class="examples-area">
+
+        </div>
+
+        <div id="script-area">
+        </div>
+
+        <div class="upper-left-controls">
+            <div id="github-button" class="primary-button"><i id="play-button-img" class="fab fa-github-alt fa-lg" style="color: white; margin-right: 15px;"></i>View On Github</div>
+        </div>
+
+        <div class="lower-left-controls">
+            <div id="start-button" class="primary-button"><i id="play-button-img" class="fas fa-play fa-md" style="color: white; margin-right: 15px;"></i>Start Physics</div>
+            <div id="pause-button" class="primary-button"><i id="pause-button-img" class="fas fa-pause fa-md" style="color: white; margin-right: 15px;"></i>Pause Physics</div>
+        </div>
+        
+        <div class="lower-right-controls">
+            <div id="run-button" class="primary-button"><i id="run-button-img" class="fas fa-power-off fa-md" style="color: white; margin-right: 15px;"></i>Run Script</div>
+        </div>
+
+        <canvas id="simulationCanvas" style="margin: 0; display: block;"></canvas>
+
+        <script src="js/particle-render.js"></script>
+        <script src="js/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

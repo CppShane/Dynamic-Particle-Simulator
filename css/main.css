@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+h1 {
+    position: absolute;
+    margin-top: 23px;
+    margin-left: 3em;
+    width: 450px;
+    color: white;
+    font-size: 100;
+    font-family: "Roboto Slab";
+}
+
+h2 {
+    padding: 0;
+    color: white;
+    font-size: 100;
+    font-family: "Roboto Slab";
+    text-align: center;
+
+}
+
+.overlay-header {
+    pointer-events: none;
+    background: none !important;
+    position: absolute;
+    height: 100px;
+    width: 100%;
+}
+
+.menu-button {
+    pointer-events: all;
+    position: absolute;
+    padding: 0.5em;
+    margin-top: 30px;
+    margin-left: 2em;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 2px;
+    -webkit-transition: all 0.15s ease 0s;
+    -moz-transition: all 0.15s ease 0s;
+    -o-transition: all 0.15s ease 0s;
+    transition: all 0.15s ease 0s;
+}
+
+.menu-button:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.primary-button {
+    display: none;
+    opacity: 0;
+    width: 125px;
+    height: 15px;
+    margin-top: 10px;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-family: "Roboto Slab";
+    font-size: 12px;
+    padding: 9px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    -webkit-transition: all 0.15s ease 0s;
+    -moz-transition: all 0.15s ease 0s;
+    -o-transition: all 0.15s ease 0s;
+    transition: all 0.15s ease 0s;
+}
+
+.primary-button:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.examples-area {
+    position: absolute;
+    background: none !important;
+    opacity: 0;
+    display: none;
+    right: 0;
+    margin-right: 6em;
+    margin-top: 4em;
+}
+
+.example-button {
+    width: 190px;
+    height: 15px;
+    margin-top: 10px;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-family: "Roboto Slab";
+    font-size: 12px;
+    padding: 9px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    -webkit-transition: all 0.15s ease 0s;
+    -moz-transition: all 0.15s ease 0s;
+    -o-transition: all 0.15s ease 0s;
+    transition: all 0.15s ease 0s;
+}
+
+.example-button-selected {
+    width: 190px;
+    height: 15px;
+    margin-top: 10px;
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: white;
+    font-family: "Roboto Slab";
+    font-size: 12px;
+    padding: 9px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.example-button:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.upper-left-controls {
+    pointer-events: none;
+    background: none !important;
+    position: absolute;
+    top: 0;
+    margin-top: 4.5em;
+    margin-left: 2.5em;
+}
+
+.lower-left-controls {
+    pointer-events: none;
+    background: none !important;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1.5em;
+}
+
+.lower-right-controls {
+    pointer-events: none;
+    background: none !important;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1.5em;
+    margin-right: 34em;
+    width: 100%;
+}
+
+#run-button {
+    pointer-events: all;
+    float: right;
+    margin-right: 34em;
+}
+
+#start-button {
+    pointer-events: all;
+    display: inline-block;
+    margin-left: 3.5em;
+}
+
+#pause-button {
+    pointer-events: all;
+    margin-left: 1em;
+}
+
+#github-button {
+    pointer-events: all;
+}
+
+#script-area {
+    pointer-events: all;
+    position: absolute;
+    opacity: 0;
+    display: none;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 4px;
+    margin-right: 34em;
+    margin-left: 3.5em;
+    margin-top: 11.5em;
+    margin-bottom: 6.5em;
+    background-color: rgba(255, 255, 255, 0.6);
+}
