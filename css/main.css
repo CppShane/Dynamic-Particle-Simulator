@@ -46,8 +46,6 @@ h2 {
 }
 
 .primary-button {
-    display: none;
-    opacity: 0;
     width: 125px;
     height: 15px;
     margin-top: 10px;
@@ -149,6 +147,7 @@ h2 {
     pointer-events: all;
     float: right;
     margin-right: 34em;
+    display: block;
 }
 
 #start-button {
@@ -160,9 +159,11 @@ h2 {
 #pause-button {
     pointer-events: all;
     margin-left: 1em;
+    display: inline-block;
 }
 
 #github-button {
+    display: block;
     pointer-events: all;
 }
 

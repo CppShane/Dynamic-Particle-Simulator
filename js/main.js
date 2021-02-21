@@ -413,18 +413,6 @@ $(document).ready(function() {
                 $("#title-header").text("Dynamic Particle Simulator").fadeIn(100);
             });
 
-            $("#start-button").css('display','inline-block')
-            $("#start-button").animate({opacity: 1}, 200);
-
-            $("#pause-button").css('display','inline-block')
-            $("#pause-button").animate({opacity: 1}, 200);
-
-            $("#run-button").css('display','block')
-            $("#run-button").animate({opacity: 1}, 200);
-
-            $("#github-button").css('display','block')
-            $("#github-button").animate({opacity: 1}, 200);
-
             $("#script-area").css("display", "block");
             $("#script-area").animate({opacity:1}, 200);
 
@@ -436,22 +424,6 @@ $(document).ready(function() {
         else {
             $("#title-header").fadeOut(100, function() {
                 $("#title-header").text("DPS").fadeIn(100);
-            });
-
-            $("#start-button").animate({opacity: 0}, 200, function() {
-                $("#start-button").css('display', 'none');
-            });
-
-            $("#pause-button").animate({opacity: 0}, 200, function() {
-                $("#pause-button").css('display', 'none');
-            });
-
-            $("#run-button").animate({opacity: 0}, 200, function() {
-                $("#run-button").css('display', 'none');
-            });
-
-            $("#github-button").animate({opacity: 0}, 200, function() {
-                $("#github-button").css('display', 'none');
             });
 
             $("#script-area").animate({'opacity':'0'}, 200, function() {
