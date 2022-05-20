@@ -168,10 +168,14 @@ ParticleRender.SetTimestepFunction(function(dt) {
 
         //----- Apply leapfrog timestep -----//
 
+        particleData[props.v][i][dim.x] = particleData[props.v][i][dim.x] + 0.5 * (particleData[props.a][i][dim.x] + newA[dim.x]) * dt;
+        particleData[props.v][i][dim.y] = particleData[props.v][i][dim.y] + 0.5 * (particleData[props.a][i][dim.y] + newA[dim.y]) * dt;
+        particleData[props.v][i][dim.z] = particleData[props.v][i][dim.z] + 0.5 * (particleData[props.a][i][dim.z] + newA[dim.z]) * dt;
+
         particleData[props.r][i][dim.x] = particleData[props.r][i][dim.x] + particleData[props.v][i][dim.x] * dt + 0.5 * particleData[props.a][i][dim.x] * dt * dt;
         particleData[props.r][i][dim.y] = particleData[props.r][i][dim.y] + particleData[props.v][i][dim.y] * dt + 0.5 * particleData[props.a][i][dim.y] * dt * dt;
         particleData[props.r][i][dim.z] = particleData[props.r][i][dim.z] + particleData[props.v][i][dim.z] * dt + 0.5 * particleData[props.a][i][dim.z] * dt * dt;
-
+        
         particleData[props.v][i][dim.x] = particleData[props.v][i][dim.x] + 0.5 * (particleData[props.a][i][dim.x] + newA[dim.x]) * dt;
         particleData[props.v][i][dim.y] = particleData[props.v][i][dim.y] + 0.5 * (particleData[props.a][i][dim.y] + newA[dim.y]) * dt;
         particleData[props.v][i][dim.z] = particleData[props.v][i][dim.z] + 0.5 * (particleData[props.a][i][dim.z] + newA[dim.z]) * dt;
