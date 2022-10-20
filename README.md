@@ -1,5 +1,5 @@
 # Dynamic Particle Simulator
-Easily create WebGL based N-body simulations in the browser. Built with <a href="https://www.npmjs.com/package/particle-render">particle-render.js</a>.
+Easily create WebGL based N-body simulations in the browser.
 
 ![dps-demo](https://user-images.githubusercontent.com/6633831/169607605-40e1c4d3-82df-4975-bbb8-fd2eec910191.gif)
 ## How Does It Work?
