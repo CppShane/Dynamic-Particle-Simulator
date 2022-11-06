@@ -2,7 +2,7 @@
 // Predefined Script Strings //
 //---------------------------//
 
-var galaxyExpansion = `
+var spinningGalaxy = `
 /*-------------------------------------------------------------------------------------------
 
 Built with
@@ -407,7 +407,7 @@ scriptArea.setOptions({
     animatedScroll: true
 });
 
-scriptArea.setValue(galaxyExpansion, -1);
+scriptArea.setValue(spinningGalaxy, -1);
 scriptArea.clearSelection();
 
 $(document).ready(function() {
